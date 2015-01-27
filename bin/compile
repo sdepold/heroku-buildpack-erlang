@@ -4,6 +4,7 @@
 # usage: bin/compile <build-dir> <cache-dir>
 
 set -e
+sudo apt-get install openssl libssl-dev
 bpdir=$(cd $(dirname $(dirname $0)); pwd)
 mkdir -p "$1" "$2"
 build=$(cd "$1/" && pwd)
